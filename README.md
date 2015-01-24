@@ -14,8 +14,8 @@ containers](http://blogs.msdn.com/b/webdev/archive/2015/01/14/running-asp-net-5-
 
 ## Usage
 
+    librarian-puppet install
     vagrant up --provider virtualbox
-    vagrant provision
 
 This will take a little time as it launches a virtual machine and
 downloads lots of software onto it.
