@@ -1,0 +1,14 @@
+---
+classes:
+  - apt
+  - locales
+  - ssh
+  - motd
+  - sudo
+  - timezone
+  - unattended_upgrades
+  - git
+  - ufw
+
+timezone::timezone: 'UTC'
+unattended_upgrades::autoremove: true

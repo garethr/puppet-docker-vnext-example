@@ -1,0 +1,49 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    andschwa-unattended_upgrades (0.1.2)
+    attachmentgenie-ufw (1.4.9)
+      puppetlabs-stdlib (>= 2.2.1)
+    camptocamp-archive (0.3.6)
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-git (0.3.0)
+      puppetlabs-vcsrepo (>= 0.1.0)
+    puppetlabs-stdlib (4.5.1)
+    puppetlabs-vcsrepo (1.2.0)
+    saz-limits (2.1.0)
+    saz-locales (2.2.0)
+    saz-motd (2.2.0)
+    saz-ssh (2.4.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    saz-sudo (3.0.9)
+      puppetlabs-stdlib (>= 2.3.0)
+    saz-timezone (3.1.1)
+      puppetlabs-stdlib (>= 2.3.0)
+    stahnma-epel (1.0.2)
+
+GIT
+  remote: https://github.com/garethr/garethr-docker.git
+  ref: master
+  sha: 820f2c89408575fc9b3f3ba3c0e1d62b154c6d62
+  specs:
+    garethr-docker (3.3.1)
+      puppetlabs-apt (>= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
+
+DEPENDENCIES
+  andschwa-unattended_upgrades (>= 0)
+  attachmentgenie-ufw (>= 0)
+  camptocamp-archive (>= 0)
+  garethr-docker (>= 0)
+  puppetlabs-apt (>= 0)
+  puppetlabs-git (>= 0)
+  puppetlabs-stdlib (>= 0)
+  saz-limits (>= 0)
+  saz-locales (>= 0)
+  saz-motd (>= 0)
+  saz-ssh (>= 0)
+  saz-sudo (>= 0)
+  saz-timezone (>= 0)
+
