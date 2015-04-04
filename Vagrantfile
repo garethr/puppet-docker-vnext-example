@@ -6,6 +6,10 @@ VAGRANTFILE_API_VERSION = "2"
 
 $instances = (ENV['INSTANCES'] || 1).to_i
 
+unless Vagrant.has_plugin?('vagrant-hosts')
+  raise 'The vagrant-hosts plugin is missing. Please run vagrant plugin install vagrant-hosts'
+end
+
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   $instances.times do |n|
@@ -32,6 +36,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     end
   end
-
 
 end
