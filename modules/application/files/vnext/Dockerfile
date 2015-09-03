@@ -2,7 +2,8 @@ FROM microsoft/aspnet
 
 COPY . /app
 WORKDIR /app
-RUN ["kpm", "restore"]
+ENV MONO_THREADS_PER_CPU 2000
+RUN ["dnu", "restore"]
 
 EXPOSE 5004
-ENTRYPOINT ["k", "kestrel"]
+ENTRYPOINT ["dnx", "kestrel"]
